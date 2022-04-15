@@ -39,7 +39,12 @@
 
  */
 
+ /* header start */
+.header{
+  text-align: center;
+}
 
+ /* header end */
 
 
 .shopcontainer{

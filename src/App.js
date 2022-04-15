@@ -14,16 +14,16 @@ import Footer from './component/Footer';
 
 
 // function App() {
-  
+
 // }
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Header/>
-        <Home/>
-        <Footer/>
+        <Header />
+        <Home />
+        <Footer />
       </div>
     );
   }
