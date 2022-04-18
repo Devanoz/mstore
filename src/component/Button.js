@@ -5,8 +5,8 @@ import React from 'react'
 
 export default function Button(props) {
     const buttonStyle = {
-        color: props.color,
-        backgroundColor: "black",
+        color:"white",
+        backgroundColor:props.color,
         borderColor: "black"
     }
 
@@ -15,7 +15,7 @@ export default function Button(props) {
     // }
 
     return (
-        <button className="btn" style={buttonStyle } onClick={props.onClick}>add</button>
+        <button className="btn" style={buttonStyle } onClick={props.onClick}>{props.value}</button>
     );
 }
 

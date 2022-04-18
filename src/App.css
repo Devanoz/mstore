@@ -59,10 +59,13 @@
 }
 
 
-/* card start */
+/* shop section start */
+
+
+
 .card-image{
   background-size: cover;
-  background-image: url(../public/logo192.png);
+ 
 }
 
-/* card end */
+/* shopsection end */

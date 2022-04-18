@@ -3,43 +3,57 @@ import { Link } from "react-router-dom";
 //missing ratings
 //missing pagination
 
+//import data
 import products from "../../data/products";
-
-
-
-
+//import image
+import shirt1 from '../../../public/images/shirt1.jpg';
+//import component
+import Button from '../Button';
 
 class ShopSection extends React.Component {
 
     render() {
         const cardImageSyle = {
-                color: "red",
-                
+            color: "red",
+
         }
 
-        const array = [{id:1, name: "kaos bali" }, {id:2, name: "kaos jogja" }, {id:3, name: "kaos wonogiri" }, {id:4, name: "kaos bandung" },{id:5, name: "kaos bandung" },{id:6, name: "kaos bandung" }];
+
         return (
-            <div className="row m-4 justify-content-center">
-                {
-                    array.map((value)=>{
-                        return (
-                            <div className="col-md-3 g-4"  key={value.id}>
-                                <div className="card shopcontainer ">
-                                    {/* <div style={cardImageSyle}>
-                                        hai
-                                    </div> */}
-                                    <div className="card-body">
-                                        <h5 className="card-title">{value.name}</h5>
-                                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" className="btn btn-primary">Lihat Product</a>
+            <div className="container">
+
+                <div className="row g-3">
+                    {/* <div className="col-6">
+                        <div className="border bg-light">hello</div>                   
+                    </div> */}
+                    {
+                        products.map((product) => {
+                            return (
+                                <div className="col-3">
+                                    <div class="card">
+                                        <div className="container">
+                                            <img src={shirt1} className="card-img-top card-image" alt="..." style={{
+                                                width: "50%",
+
+                                            }} />
+                                        </div>
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">{product.name}</h5>
+
+                                            <p style={{ fontWeight: "bold", }}>Rp {product.harga}</p>
+
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        );
 
-                    })
-                }
-            </div>
+                            );
+                        })
+                    }
+
+                </div>
+            </div >
+
         );
 
 
