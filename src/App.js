@@ -22,7 +22,10 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <Home />
+        <div className="container">
+          <Home />
+        </div>
+
         <Footer />
       </div>
     );

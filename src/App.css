@@ -60,7 +60,27 @@
 
 
 /* shop section start */
+.hero{
+  position: relative;
+}
 
+.faAngleRight{
+  color: green;
+  transform: scale(5);
+  position: absolute;
+  top:50%;
+  right:2%;
+  cursor: pointer;
+ 
+}
+.faAngleLeft{
+  color: green;
+  transform: scale(5);
+  position: absolute;
+  top:50%;
+  left:2%;
+  cursor: pointer;
+}
 
 
 .card-image{
@@ -69,3 +89,14 @@
 }
 
 /* shopsection end */
+
+
+/* footer start */
+.footer{
+  background-color:green;
+  text-align:center;
+  color:white;
+  height:10vh;
+}
+
+/* footer end */
