@@ -23,7 +23,7 @@ class ShopSection extends React.Component {
                 {
                     array.map((value)=>{
                         return (
-                            <div className="col-lg-3 g-4 mx-2 align-self-center"  key={value.id}>
+                            <div className="col-md-3 g-4"  key={value.id}>
                                 <div className="card shopcontainer ">
                                     {/* <div style={cardImageSyle}>
                                         hai
