@@ -1,5 +1,5 @@
 import './App.css';
-
+import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 // import ReactDOM from 'react-dom';
@@ -20,11 +20,11 @@ import Footer from './component/Footer';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <Router>
         <Header />
         <Home />
         <Footer />
-      </div>
+      </Router>
     );
   }
 }
