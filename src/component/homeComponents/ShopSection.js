@@ -24,7 +24,7 @@ class ShopSection extends React.Component {
 
         return (
             <div className="container container-md-5 mx-auto my-5">
-
+                
                 <div className="row g-3 my-5">
                     {/* <div className="col-6">
                         <div className="border bg-light">hello</div>                   

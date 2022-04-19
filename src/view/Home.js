@@ -7,13 +7,14 @@ import React from 'react'
 // import Hero from "../component/homeComponents/Hero";
 import ShopSection from "../component/homeComponents/ShopSection";
 import Hero from '../component/homeComponents/Hero';
-
+import Search from '../component/homeComponents/Search';
 
 class Home extends React.Component {
     render() {
         return (
             <div>
                 <Hero/>
+                <Search/>
                 <ShopSection />
             </div>
         );
