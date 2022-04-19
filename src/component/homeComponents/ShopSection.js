@@ -23,16 +23,17 @@ class ShopSection extends React.Component {
 
 
         return (
-            <div className="container container-md-5 mx-auto my-5">
+            <div className="container">
                 
-                <div className="row g-3 my-5">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     {/* <div className="col-6">
                         <div className="border bg-light">hello</div>                   
                     </div> */}
                     {
                         products.map((product) => {
                             return (
-                                <div className="col-3">
+                                
+                                <div className="col">
                                     <div class="card">
                                         <div className="container">
                                             <img src={shirt1} className="card-img-top card-image" alt="..." style={{
