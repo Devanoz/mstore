@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -28,38 +28,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
- */
-
- /* header start */
-.header{
-  text-align: center;
-}
-
- /* header end */
-
-
-.shopcontainer{
-  width:300px;
-  height:200px;
-}
-.product-image{
-  width:20%;
-  
-  
-
-}
-
-
-/* shop section start */
+/* shopsection */
 .hero{
   position: relative;
 }
@@ -85,18 +54,23 @@
 
 .card-image{
   background-size: cover;
- 
 }
-
 /* shopsection end */
 
-
-/* footer start */
+/* footer */
 .footer{
   background-color:green;
   text-align:center;
   color:white;
   height:10vh;
 }
-
 /* footer end */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
