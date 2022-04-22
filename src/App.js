@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from '../src/view/Home'
 import second from '../src/component/Footer'
 import Footer from '../src/component/Footer';
+import React from 'react';
+
 
 function App() {
   return (
