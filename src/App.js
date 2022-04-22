@@ -1,36 +1,19 @@
+import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import Header from '../src/component/Header/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
-// import ReactDOM from 'react-dom';
+import Home from '../src/view/Home'
+import second from '../src/component/Footer'
+import Footer from '../src/component/Footer';
 
-//import
-import Home from './view/Home';
-import Header from './component/Header';
-import Footer from './component/Footer';
-//import images
-
-
-
-
-// function App() {
-
-// }
-
-class App extends React.Component {
-  render() {
-    return (
-      <Router>
-        <Header />
-        <div className="container">
-          <Home />
-        </div>
-
-        <Footer />
-      </Router>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Header/>
+      <Home/>
+      <Footer/>
+    </div>
+  );
 }
-
 
 export default App;

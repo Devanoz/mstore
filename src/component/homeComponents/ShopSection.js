@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 //import data
 import products from "../../data/products";
 //import image
-import shirt1 from '../../../public/images/shirt1.jpg';
+import shirt1 from '../../images/shirt1.jpg';
 //import component
 import Button from '../Button';
 import Rating from './Rating';
