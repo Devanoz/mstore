@@ -6,37 +6,33 @@ export class Header extends Component {
   render() {
     return (
       
-<Navbar collapseOnSelect expand="lg" bg="primary" variant="light" className='shadow-lg shadow' >
+<Navbar collapseOnSelect expand="lg"  className='shadow-lg shadow navbar' >
   <Container>
   <Navbar.Brand href="#home">
   <img
         src={Logo}
-        width="100"
-        height=""
-        className="d-inline-block align-top"
+        className="d-inline-block align-top nav-logo-image"
         alt="Mstore"
       />
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <Nav.Link href="#home" id='home'>Home</Nav.Link>
-      <NavDropdown title="Product" id="collasible-nav-dropdown">
+      <Nav.Link href="#home" id='home' className='navtext'>Home</Nav.Link>
+      <NavDropdown title="Product" id="collasible-nav-dropdown"  className='navtext'>
         <NavDropdown.Item  href="#action/3.1"><img src={Logo} width='100'></img></NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2"><img src={Logo} width='100'></img></NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3"><img src={Logo} width='100'></img></NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
       </NavDropdown>
-      <Nav.Link href="#pricing">About</Nav.Link>
-      <Nav.Link href="#pricing">Contact</Nav.Link>
+      <Nav.Link href="#pricing"  className='navtext'>About</Nav.Link>
+      <Nav.Link href="#contact"  className='navtext'>Contact</Nav.Link>
 
       
     </Nav>
     <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
+      <Nav.Link href="#deets">Cart</Nav.Link>
       <Nav.Link eventKey={2} href="#memes">
-        Dank memes
+        Account
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
