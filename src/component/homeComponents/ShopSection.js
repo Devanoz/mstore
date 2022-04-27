@@ -33,7 +33,7 @@ class ShopSection extends React.Component {
                         products.map((product) => {
                             return (
                                 
-                                <div className="col">
+                                <div className="col card-animation" key={product.id}>
                                     <div class="card">
                                         <div className="container">
                                             <img src={shirt1} className="card-img-top card-image" alt="..." style={{

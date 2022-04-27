@@ -4,6 +4,8 @@ import Header from '../src/component/Header/Header'
 import 'bootstrap/dist/css/bootstrap.css';
 import Home from '../src/view/Home'
 import Footer from '../src/component/Footer';
+import React from 'react';
+
 
 function App() {
   return (

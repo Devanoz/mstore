@@ -53,6 +53,13 @@
   cursor: pointer;
 }
 
+.card-animation:hover{
+  transform: scale(1.03);
+}
+
+.card-animation{
+  transition:transform 300ms;
+}
 
 .card-image{
   background-size: cover;
