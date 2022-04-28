@@ -29,8 +29,18 @@
 }
 
 /* shopsection */
+
+.hero-active{
+  opacity: 1;
+}
+.hero-inactive{
+  opacity: 0;
+}
+
 .hero{
   position: relative;
+  
+  transition: opacity 500ms;
 }
 
 .faAngleRight{

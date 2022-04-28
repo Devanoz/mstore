@@ -16,12 +16,31 @@ export default class Hero extends React.Component {
         super(props);
 
         
-        this.state=[Hero1,Hero2];
+        this.state={
+          imgeList:[Hero1,Hero2],
+          imageActive:[false,false],
+          imagePicked:1
+        };
         //binding
         this.updateimage=this.updateimage.bind(this);
     }
 
     updateimage(){
+      
+      let currentIndex=this.state.imagePicked;
+      if(currentIndex===0){
+        this.setState({imagePicked:1});
+      }else{
+        this.setState({imagePicked:0});
+      }
+      
+    }
+
+    componentDidMount(){
+      this.timerImage=setInterval(this.updateimage,5000);
+    }
+
+    componentWillUnmount(){
 
     }
 
@@ -32,7 +51,7 @@ export default class Hero extends React.Component {
       <div className="container-fluid my-2 p-0 hero">
           {/* <FaAngleLeft className="faAngleLeft" onClick={this.slideImage}/>
           <FaAngleRight className="faAngleRight "onClick={this.slideImage}/> */}
-         <img src={this.state[0]} className="img-fluid" style={{width:"100vw"}} alt="gambar"/>
+         <img src={this.state.imgeList[this.state.imagePicked]} className={`img-fluid heroImage`} style={{width:"100vw"}} alt="gambar" />
       </div>
     )
   }
