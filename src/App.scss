@@ -1,3 +1,7 @@
+
+
+
+
 .App {
   text-align: center;
 }
@@ -26,6 +30,44 @@
 
 .App-link {
   color: #61dafb;
+}
+
+/* Navbar */
+.navbar{
+  background-color: green;
+}
+$navbar-light-color : white;
+$navbar-light-hover-color : Yellow;
+$navbar-light-active-color : yellow;
+
+.nav-logo-image{
+  width: 100px;
+}
+.nav-logo-image:hover{
+  width: 110px;
+  transition: 1s;
+}
+$dropdown-link-hover-bg:rgba(255, 255, 0, 0.385);
+$dropdown-link-active-bg:rgb(255, 255, 0);
+
+.navbar-nav {
+  .nav-link {
+    
+
+    &:hover,
+    &:focus {
+      transition: 2s;
+    }
+
+    &.disabled {
+      transition: 5ms;
+    }
+  }
+}
+/* Navbar End */
+
+ .btn-successs{
+  background-color: #282c34;
 }
 
 /* shopsection */
@@ -91,3 +133,6 @@
     transform: rotate(360deg);
   }
 }
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/buttons";

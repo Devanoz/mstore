@@ -1,24 +1,39 @@
 import React, { Component } from 'react'
 import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
+import Logo from '../../images/Logo.png'
 
 export class Header extends Component {
   render() {
     return (
-      <Navbar bg="light" expand="lg">
+
+      <Navbar collapseOnSelect expand="lg" className='shadow-lg shadow navbar' >
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Brand href="#home">
+            <img
+              src={Logo}
+              className="d-inline-block align-top nav-logo-image"
+              alt="Mstore"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              <Nav.Link href="#home" id='home' className='navtext'>Home</Nav.Link>
+              <NavDropdown title="Product" id="collasible-nav-dropdown" className='navtext'>
+                <NavDropdown.Item href="#action/3.1"><img src={Logo} width='100'></img></NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2"><img src={Logo} width='100'></img></NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3"><img src={Logo} width='100'></img></NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link href="#pricing" className='navtext'>About</Nav.Link>
+              <Nav.Link href="#contact" className='navtext'>Contact</Nav.Link>
+
+
+            </Nav>
+            <Nav>
+              <Nav.Link href="#deets">Cart</Nav.Link>
+              <Nav.Link eventKey={2} href="#memes">
+                Account
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
